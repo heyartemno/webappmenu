@@ -93,8 +93,7 @@ p {
 }
 
 .buy {
-    width: 80px;
-    height: 24px;
+    flex: 0 0 40px;
     justify-content: center;
     border-radius: 50px;
     border: none;
@@ -150,4 +149,11 @@ p {
 .items_control:hover {
     background: #000000;
     color: #FFFFFF;
+}
+
+.counters {
+        display: flex;
+        flex-direction: row;
+        height: 20px;
+        column-gap: 4px;
 }

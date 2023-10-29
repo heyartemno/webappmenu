@@ -3,11 +3,13 @@ from telebot import types
 from telebot.types import WebAppInfo, ShippingOption
 
 bot = telebot.TeleBot("6961282310:AAEiGDvS0eFShH9YIxVUUq5yJgSObbDn9iw")
-PAYMENTS_TOKEN = '401643678:TEST:0363ce47-d7c7-47d4-8491-170838062f73'
-keyboard = WebAppInfo(url='https://heyartemno.github.io/testtelegramwebapp/')
+PAYMENTS_TOKEN = '381764678:TEST:70016'
+keyboard = WebAppInfo(url='https://heyartemno.github.io/webappmenu/')
 
 PRICE = {
-    '1': [types.LabeledPrice(label='Зефир', amount=100*100)],
+    '1_3': [types.LabeledPrice(label='Зефир (3шт)', amount=100 * 3 * 100)],
+    '1_6': [types.LabeledPrice(label='Зефир (6шт)', amount=100 * 6 * 100)],
+    '1_9': [types.LabeledPrice(label='Зефир (9шт)', amount=100* 9 *100)],
     '2': [types.LabeledPrice(label='Маршмеллоу', amount=120*100)],
     '3': [types.LabeledPrice(label='Шоколадное печенье', amount=120*100)],
     '4': [types.LabeledPrice(label='Фисташковое печенье', amount=120*100)],
@@ -56,7 +58,6 @@ def pre_checkout_process(pre_checkout_query):
 
 @bot.shipping_query_handler(func=lambda query: True)
 def process_shipping_query(shipping_query: types.ShippingQuery):
-        print('shipping_query.shipping_address')
         print(shipping_query.shipping_address)
 
         if shipping_query.shipping_address.country_code != 'RU':

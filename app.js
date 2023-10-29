@@ -9,7 +9,9 @@ let item = "";
 //const counters = document.querySelectorAll('[counter_wrapper]')
 
 
-let btn1 = document.getElementById("btn1");
+let btn1_3 = document.getElementById("btn1_3");
+let btn1_6 = document.getElementById("btn1_6");
+let btn1_9 = document.getElementById("btn1_9");
 let btn2 = document.getElementById("btn2");
 let btn3 = document.getElementById("btn3");
 let btn4 = document.getElementById("btn4");
@@ -38,15 +40,22 @@ let btn6 = document.getElementById("btn6");
 //    })
 //};
 
-btn1.addEventListener("click", function(){
-    if (tg.MainButton.isVisible) {
-        tg.MainButton.hide();
-    }
-    else {
+btn1_3.addEventListener("click", function(){
         tg.MainButton.setText("Товар добавлен в корзину!")
-        item = "1";
+        item = "1_3";
         tg.MainButton.show();
-    }
+});
+
+btn1_6.addEventListener("click", function(){
+        tg.MainButton.setText("Товар добавлен в корзину!")
+        item = "1_6";
+        tg.MainButton.show();
+});
+
+btn1_9.addEventListener("click", function(){
+        tg.MainButton.setText("Товар добавлен в корзину!")
+        item = "1_9";
+        tg.MainButton.show();
 });
 
 btn2.addEventListener("click", function(){
