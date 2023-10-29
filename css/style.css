@@ -23,13 +23,131 @@
 }
 
 body {
-    background: #FF5678;
+    background: #523634;
+}
+
+.main {
+    max-wight: 300px;
+}
+
+img{
+      border-radius: 10px;
+      width: 100%;
+      max-height: 120px;
+      object-fit: cover;
+      text-align: center;
+      margin: 15px 10px 15px 10px
+}
+
+h1 {
     color: #FFF;
     text-align: center;
     font-family: Comfortaa;
-    font-size: 26px;
+    font-size: 0,76em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 2.6px;
+}
+
+.menu {
+  margin-top: 30px;
+  margin-left: 44px;
+  margin-right: 44px;
+}
+
+.menu_container {
+  display: grid;
+  grid-template-columns: repeat(1, 350px);
+  gap: 15px;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: stretch;
+  text-align: center;
+  background-color: #ffbf94;
+  border-radius: 20px;
+  column-gap: 30px;
+}
+
+.description{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 111px 24px;
+  justify-items: start;
+  text-align: start;
+}
+
+p {
+    color: #523634;
+    font-family: Comfortaa;
+    font-size: auto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.68px;
+}
+
+.buy {
+    width: 80px;
+    height: 24px;
+    justify-content: center;
+    border-radius: 50px;
+    border: none;
+    background: #FFFFFF;
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.45px;
+    /*line-height: normal;*/
+}
+
+.buy:hover {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.counter_wrapper {
+    display: none;
+    /*display: flex;*/
+    flex-direction: row;
+    height: 20px;
+    column-gap: 4px;
+    user-select: none;
+}
+
+.items_control {
+    flex: 0 0 30px;
+    border: none;
+    border-radius: 50px;
+    background: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+}
+
+.items_current {
+    display: flex;
+    flex: 0 0 40px;
+    background: none;
+    /*background: #FFFFFF;*/
+    border: none;
+    border-radius: 30px;
+    color: #000;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 400;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.items_control:hover {
+    background: #000000;
+    color: #FFFFFF;
 }

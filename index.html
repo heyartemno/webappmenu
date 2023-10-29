@@ -9,10 +9,86 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="main">
-        <h1>Добавьте товар в корзину</h1>
-        <p>Тут скоро будет много интересного</p>
-        <button id="buy">Купить</button>
-    </div>
+    <section class="main">
+        <h1>Добавьте товар<br>в корзину</h1>
+    </section>
+    <section class="menu">
+        <div class="menu_container">
+            <div class="card-body">
+                <img src="images/zefir.jpg" alt="Zefir">
+                <div class="description">
+                    <p><b>Зефир<br></b>80₽</p>
+                    <button class="buy" id="btn1">добавить</button>
+                    <div class="items counter_wrapper">
+                        <div class="items_control" data-action="minus">-</div>
+                        <div class="items_current" data-counter>1</div>
+                        <div class="items_control" data-action="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <img src="images/marshmelloy.jpeg" alt="Marshmelloy">
+                <div class="description">
+                    <p><b>Маршмеллоу</b><br>100₽</p>
+                    <button class="buy" id="btn2">добавить</button>
+                    <div class="items counter_wrapper">
+                        <div class="items_control" data-action="minus">-</div>
+                        <div class="items_current" data-counter>1</div>
+                        <div class="items_control" data-action="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <img src="images/choko.jpeg" alt="Choko">
+                <div class="description">
+                    <p><b>Шоколадное печенье</b><br>100₽</p>
+                    <button class="buy" id="btn3">добавить</button>
+                    <div class="items counter_wrapper">
+                        <div class="items_control" data-action="minus">-</div>
+                        <div class="items_current" data-counter>1</div>
+                        <div class="items_control" data-action="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <img src="images/fistashka_2.jpeg" alt="Fistashka">
+                <div class="description">
+                    <p><b>Фисташковое печенье</b><br>100₽</p>
+                    <button class="buy" id="btn4">добавить</button>
+                    <div class="items counter_wrapper">
+                        <div class="items_control" data-action="minus">-</div>
+                        <div class="items_current" data-counter>1</div>
+                        <div class="items_control" data-action="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <img src="images/beze.jpeg" alt="Beze">
+                <div class="description">
+                    <p><b>Безе <br></b>80₽</p>
+                    <button class="buy" id="btn5">добавить</button>
+                    <div class="items counter_wrapper">
+                        <div class="items_control" data-action="minus">-</div>
+                        <div class="items_current" data-counter>1</div>
+                        <div class="items_control" data-action="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <img src="images/iriska.jpeg" alt="Iriska">
+                <div class="description">
+                    <p><b>Ириска </b><br>100₽</p>
+                    <button class="buy" id="btn6">добавить</button>
+                    <div class="items counter_wrapper">
+                        <div class="items_control" data-action="minus">-</div>
+                        <div class="items_current" data-counter>1</div>
+                        <div class="items_control" data-action="plus">+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
